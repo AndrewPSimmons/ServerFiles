@@ -1,9 +1,10 @@
 
 <template>
   <div id="app" class="small-container">
+    <nav-bar />
+
     <h1 id="head">Employee</h1>
 
-    <nav-bar />
     <employee-form @add:employee="addEmployee" />
     <employee-table :employees="employees" />
   </div>
