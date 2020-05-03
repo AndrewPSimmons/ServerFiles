@@ -3,6 +3,7 @@
   <div id="app" class="small-container">
     <h1 id="head">Employee</h1>
 
+    <nav-bar />
     <employee-form @add:employee="addEmployee" />
     <employee-table :employees="employees" />
   </div>
@@ -11,11 +12,13 @@
 <script>
 import EmployeeTable from "@/components/EmployeeTable.vue";
 import EmployeeForm from "@/components/EmployeeForm.vue";
+import NavBar from "@/components/NavBar.vue";
 export default {
   name: "app",
   components: {
     EmployeeTable,
-    EmployeeForm
+    EmployeeForm,
+    NavBar
   },
   data() {
     return {
